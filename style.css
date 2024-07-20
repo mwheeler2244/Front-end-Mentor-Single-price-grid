@@ -1,0 +1,98 @@
+:root {
+  --Cyan: hsl(179, 62%, 43%);
+  --Bright-Yellow: hsl(71, 73%, 54%);
+
+  --Light-Gray: hsl(204, 43%, 93%);
+  --Grayish-Blue: hsl(218, 22%, 67%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  background-color: var(--Light-Gray);
+  line-height: 1.75;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+h1 {
+  font-size: 2rem;
+  color: var(--Cyan);
+}
+
+.home {
+  max-width: 1440px;
+  margin-inline: auto;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+
+  border-radius: 12px;
+  max-width: 750px;
+  margin-inline: auto;
+  overflow: hidden;
+  background-color: white;
+}
+.top,
+.col {
+  padding: 2rem 2.5rem;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  flex: 1;
+
+  color: var(--Light-Gray);
+}
+.bottom {
+  display: flex;
+  flex-wrap: wrap;
+
+  background-color: var(--Cyan);
+}
+
+.col:nth-child(2) {
+  background-color: hsl(179, 40%, 55%);
+}
+
+.top h2 {
+  color: var(--Bright-Yellow);
+}
+.top p {
+  color: rgba(0, 0, 0, 0.322);
+}
+.top > * {
+  margin-block: 1rem;
+}
+span:nth-child(1) {
+  font-size: 2rem;
+}
+span:nth-child(2) {
+  color: var(--Light-Gray);
+  opacity: 0.5;
+}
+
+.col p {
+  font-size: 1.125rem;
+}
+
+.btn {
+  padding: 1rem;
+  background-color: var(--Bright-Yellow);
+  border: none;
+  border-radius: 10px;
+  color: var(--Light-Gray);
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 1rem;
+}
